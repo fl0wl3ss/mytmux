@@ -26,7 +26,7 @@ run_segment() {
 		    lan_ip="${lan_ip%/*}"
 	    # Only display the last entry
 		    lan_ip="$(echo "$lan_ip" | tail -1)"
-		    echo " "
+		    echo ""
 		    return 0
 		fi
 

@@ -95,7 +95,7 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		
 		"logo 235 2 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \		
 		"hackthebox 235 2 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
-		"vcs_branch 235 207 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \ 
+		"vcs_branch 235 1 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \ 
 		#"hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
