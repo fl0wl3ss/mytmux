@@ -51,7 +51,8 @@ __parse_git_branch() {
 	# Clean off unnecessary information.
 	branch=${branch#refs\/heads\/}
 
-	echo  -n "#[fg=colour${git_colour}]  #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch_symbol} ${branch}"
+	#echo  -n "#[fg=colour${git_colour}]  #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch_symbol} ${branch}"
+	echo  -n "#[fg=colour${git_colour}]  #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
 }
 
 # Show SVN branch.
