@@ -3,9 +3,11 @@
 # Source lib to get the function get_tmux_pwd
 source "${TMUX_POWERLINE_DIR_LIB}/tmux_adapter.sh"
 
-branch_symbol=""
+#branch_symbol=""
+branch_symbol=""
 git_colour="1"
-svn_colour="220"
+#svn_colour="220"
+svn_colour="1"
 hg_colour="45"
 
 
@@ -52,9 +54,11 @@ __parse_git_branch() {
 	branch=${branch#refs\/heads\/}
 
 	#echo  -n "#[fg=colour${git_colour}]  #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch_symbol} ${branch}"
-	echo  -n "#[fg=colour${git_colour}]  #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
+	#echo  -n "#[fg=colour${git_colour}]  #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
+	#echo  -n "#[fg=colour${git_colour}]#[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}  "
+	echo "#[fg=colour${svn_colour}]${branch_symbol} #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
 }
-
+ # 
 # Show SVN branch.
 __parse_svn_branch() {
 	type svn >/dev/null 2>&1
