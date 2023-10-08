@@ -23,6 +23,7 @@ __process_settings() {
 
 run_segment() {
 		directories=(
+			"$HOME/lab/asm"
 			"$HOME/lab/python"
 			"$HOME/lab/ruby"
 			"$HOME/lab/rust"
@@ -34,8 +35,10 @@ run_segment() {
 			"$HOME/lab/java"
 			"$HOME/lab/javascript"
 			"$HOME/lab/go"
+			"$HOME/lab/github"
 		)
 		outputs=(
+			" "
 			" "
 			" "
 			" "
@@ -47,6 +50,7 @@ run_segment() {
 			" "
 			" "
 			" "
+			" "
 		)
 
         __process_settings
