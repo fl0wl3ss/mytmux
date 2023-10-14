@@ -16,4 +16,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # install tmux-powerline
 git clone https://github.com/fl0wl3ss/tmux-powerline.git ~/Github
 
+# copy configs
+mkdir -p ~/bin
+cp .tmux.conf ~/
+cp .vimrc ~/
+cp config.fish ~/.config/fish
+cp vpnbash.sh ~/bin
+
 
